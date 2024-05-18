@@ -18,8 +18,6 @@ const mainStyle = createGlobalStyle`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
     color: var(--color-primary);
     background-color: #02001f;
   }
@@ -28,8 +26,8 @@ const mainStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     width: 100vw;
+    gap: 15px;
     height: 100vh;
-    padding: 10px
   }
 `;
 
