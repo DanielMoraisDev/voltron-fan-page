@@ -6,7 +6,7 @@ export const CardsCharacters = styled.div`
     justify-content: space-between;
     border-radius: 8px;
     gap: 15px;
-    max-width: 300px;
+    max-width: 340px;
     max-height: 480px;
     padding: 10px;
     height: 100%;

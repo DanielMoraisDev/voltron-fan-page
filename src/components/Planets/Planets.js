@@ -6,7 +6,7 @@ export const CardsPlanets = styled.div`
     justify-content: space-between;
     border-radius: 8px;
     gap: 15px;
-    max-width: 280px;
+    max-width: 320px;
     min-height: 400px;
     max-height: 420px;
     padding: 10px;
