@@ -24,38 +24,37 @@
         {
             "titulo": "Adicione os seus wallpapers favoritos!",
             "texto": "Mostre seu amor pela série e exiba sua paixão com os wallpapers exclusivos da nossa galeria! Personalize seu dispositivo com a energia vibrante e mostre ao mundo o quão fã você é. Faça o download dos nossos wallpapers e mergulhe ainda mais fundo no universo de Voltron!",
-            "link": "/wallpapers",
+            "link": "https://wallpapercave.com/voltron-legendary-defender-wallpapers",
             "buttonText": "Ver galeria agora",
             "imageSide": "/src/assets/images/wp2644713-voltron-legendary-defender-wallpapers.jpg"
         }
     ],
-    "about":
-        {
-            "cardsHero": [
-                {
-                    "titulo": "A Continuação de uma Franquia Adorada",
-                    "texto": "Voltron assume o desafio de dar continuidade a uma das franquias mais queridas da cultura pop. Esta série não apenas resgata a essência da original, mas também expande o universo de maneiras surpreendentes. Com uma abordagem ousada e respeitosa, Voltron rejuvenesce a saga, mantendo-se fiel ao legado que a precede. É uma celebração do passado e do futuro, reafirmando o lugar especial que Voltron ocupa nos corações dos fãs, antigos e novos."
-                },
-                {
-                    "titulo": "Explorando detalhes",
-                    "texto": "Prepare-se para mergulhar nas profundezas do universo de Voltron com esta introdução detalhada à série. Desde os primórdios da história até os momentos épicos de batalha, esta exploração abrangente oferece uma visão holística do mundo de Voltron. Conheça os personagens, compreenda os conflitos e desvende os segredos que moldam essa narrativa intergaláctica. Seja você um fã de longa data ou um novato curioso, esta introdução é o ponto de partida perfeito para uma jornada inesquecível através das estrelas."
-                }
-            ],
-            "cards": [
-                {
-                    "titulo": "Planetas marcantes",
-                    "texto": "Conheça os destinos intergalácticos que moldam o universo de Voltron. De Arus, o lendário lar dos Leões e da Princesa Allura, a Balto, um mundo selvagem repleto de desafios, cada planeta tem sua própria história e importância na saga.",
-                    "link": "/personagens",
-                    "buttonText": "Conhecer planetas"
-                },
-                {
-                    "titulo": "Personagens principais",
-                    "texto": "Descubra os valentes guerreiros que compõem o lendário time de Voltron. Desde Shiro, o líder corajoso, até Hunk, o coração do grupo, cada personagem traz sua própria habilidade e determinação para a batalha contra as forças do mal.",
-                    "link": "/personages",
-                    "buttonText": "Ver galeria de personagens"
-                }
-            ]
-        },
+    "about": {
+        "cardsHero": [
+            {
+                "titulo": "A Continuação de uma Franquia Adorada",
+                "texto": "Voltron assume o desafio de dar continuidade a uma das franquias mais queridas da cultura pop. Esta série não apenas resgata a essência da original, mas também expande o universo de maneiras surpreendentes. Com uma abordagem ousada e respeitosa, Voltron rejuvenesce a saga, mantendo-se fiel ao legado que a precede. É uma celebração do passado e do futuro, reafirmando o lugar especial que Voltron ocupa nos corações dos fãs, antigos e novos."
+            },
+            {
+                "titulo": "Explorando detalhes",
+                "texto": "Prepare-se para mergulhar nas profundezas do universo de Voltron com esta introdução detalhada à série. Desde os primórdios da história até os momentos épicos de batalha, esta exploração abrangente oferece uma visão holística do mundo de Voltron. Conheça os personagens, compreenda os conflitos e desvende os segredos que moldam essa narrativa intergaláctica. Seja você um fã de longa data ou um novato curioso, esta introdução é o ponto de partida perfeito para uma jornada inesquecível através das estrelas."
+            }
+        ],
+        "cards": [
+            {
+                "titulo": "Planetas marcantes",
+                "texto": "Conheça os destinos intergalácticos que moldam o universo de Voltron. De Arus, o lendário lar dos Leões e da Princesa Allura, a Balto, um mundo selvagem repleto de desafios, cada planeta tem sua própria história e importância na saga.",
+                "link": "/personagens",
+                "buttonText": "Conhecer planetas"
+            },
+            {
+                "titulo": "Personagens principais",
+                "texto": "Descubra os valentes guerreiros que compõem o lendário time de Voltron. Desde Shiro, o líder corajoso, até Hunk, o coração do grupo, cada personagem traz sua própria habilidade e determinação para a batalha contra as forças do mal.",
+                "link": "/personages",
+                "buttonText": "Ver galeria de personagens"
+            }
+        ]
+    },
     "episodies": [
         {
             "titulo": "A origem de voltron",
@@ -102,21 +101,21 @@
         {
             "titulo": "Laços de sangue",
             "sinopse": "Keith é enviado para encontrar uma espiã chamada Krolia e localizar uma arma poderosa. Lance, Hunk e Pidge reprogramam um robô para se divertirem.",
-            "image" : "/src/assets/images/episodies/AAAABTjGhcugS4QM1rXjnAn-JwoQwKPv5BRu4sxsIp66BPIG0px46uL4GIwIZe--UKhKjpvjRJFEucJ5a2cHIZq9BkkJ3AIr00hbM4c3DbsbZnE4YwmGXFkKmxlJ.jpg",
+            "image": "/src/assets/images/episodies/AAAABTjGhcugS4QM1rXjnAn-JwoQwKPv5BRu4sxsIp66BPIG0px46uL4GIwIZe--UKhKjpvjRJFEucJ5a2cHIZq9BkkJ3AIr00hbM4c3DbsbZnE4YwmGXFkKmxlJ.jpg",
             "ep": "EP: 5",
             "temp": "TEMP: 5"
         },
         {
             "titulo": "A colônia",
             "sinopse": "Após Lotor e Allura partirem na nova nave, os outros paladinos recebem um aviso que pode mudar tudo.",
-            "image" : "/src/assets/images/episodies/AAAABdaf3s3gaHviWOmcWzaJgGlgJUs3w9cUIM6U9ogdOzv28QvF4oT-9lncXao3m0-JjuMznmIzMJDZtHP38IWsl88Oy13LGsbinpD484T1FStPnRtqc0Xus89O.jpg",
+            "image": "/src/assets/images/episodies/AAAABdaf3s3gaHviWOmcWzaJgGlgJUs3w9cUIM6U9ogdOzv28QvF4oT-9lncXao3m0-JjuMznmIzMJDZtHP38IWsl88Oy13LGsbinpD484T1FStPnRtqc0Xus89O.jpg",
             "ep": "EP: 4",
             "temp": "TEMP: 6"
         },
         {
             "titulo": "A resistência final - Parte 2",
             "sinopse": "No caça, Sam e os outros tentam adiar os ataques galra na esperança que um pedido de ajuda chegue a Voltron.",
-            "image" : "/src/assets/images/episodies/AAAABdaf3s3gaHviWOmcWzaJgGlgJUs3w9cUIM6U9ogdOzv28QvF4oT-9lncXao3m0-JjuMznmIzMJDZtHP38IWsl88Oy13LGsbinpD484T1FStPnRtqc0Xus89O.jpg",
+            "image": "/src/assets/images/episodies/AAAABdaf3s3gaHviWOmcWzaJgGlgJUs3w9cUIM6U9ogdOzv28QvF4oT-9lncXao3m0-JjuMznmIzMJDZtHP38IWsl88Oy13LGsbinpD484T1FStPnRtqc0Xus89O.jpg",
             "ep": "EP: 8",
             "temp": "TEMP: 7"
         }
@@ -154,7 +153,30 @@
         }
     ],
     "planets": [
-        
+        {
+            "name": "Arus",
+            "description": "Arus é o planeta onde os Paladinos descobrem os Leões de Voltron. É um mundo pacífico e próspero que se torna um dos principais focos da resistência contra os Galra.",
+            "image": "/src/assets/images/planets/nvlsyi3iaaaa.jpg"
+        },
+        {
+            "name": "Daibazaal",
+            "description": "Daibazaal é o planeta natal do Império Galra e serve como base principal de Zarkon. É um mundo hostil e sombrio, marcado pela tirania e pela sede de conquista dos Galra.",
+            "image": "/src/assets/images/planets/tumblr_inline_onvhqb3u081uqcda9_640.png"
+        },
+        {
+            "name": "Balmera",
+            "description": "Balmera é um planeta vivo, onde seus habitantes vivem em harmonia com a criatura gigante que compõe o planeta. Os Balmeranos são escravizados pelos Galra.",
+            "image": "/src/assets/images/planets/56346cd62898d07029a428102149e8462506dbeer1-700-684v2_00.jpg"
+        },
+        {
+            "name": "Naxzela",
+            "description": "Naxzela é um planeta gélido e inóspito, lar de uma base secreta Galra. Os Paladinos enfrentam condições extremas e descobrem segredos importantes enquanto tentam desmantelar a base inimiga.",
+            "image": "/src/assets/images/planets/naxzela.png"
+        },
+        {
+            "name": "Pollux",
+            "description": "Pollux é o planeta irmão de Arus, conhecido por sua beleza e cultura rica. Embora similar a Arus, Pollux tem uma história complexa com os Galra e desempenha um papel crucial na luta pela liberdade.",
+            "image": "/src/assets/images/planets/images.jpeg"
+        }
     ]
-    
 }

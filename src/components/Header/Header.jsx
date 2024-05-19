@@ -7,11 +7,9 @@ import imgLogoNav from "../../assets/images/AAAABUjpyr1ELnx5ihWcKmO9YBWXWFk9o61t
 const Header = () => {
     return (
         <MainNav>
-            <RouterLink to="/">Página inicial</RouterLink>
-            <RouterLink to="/wallpapers">Wallpapers</RouterLink>
             <RouterLink to="/sobre">Sobre</RouterLink>            
-            <RouterLink to="/" ><LogoNav src={imgLogoNav} /></RouterLink>
             <RouterLink to="/episodios">Episódios</RouterLink>
+            <RouterLink to="/" ><LogoNav src={imgLogoNav} /></RouterLink>
             <RouterLink to="/personagens">Personagens</RouterLink>
             <RouterLink to="/planetas">Planetas</RouterLink>
         </MainNav>

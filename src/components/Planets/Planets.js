@@ -1,1 +1,24 @@
 import styled from "styled-components";
+
+export const CardsPlanets = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    gap: 15px;
+    max-width: 280px;
+    min-height: 400px;
+    max-height: 420px;
+    padding: 10px;
+    height: 100%;
+    background-color: #d4c7c723;
+    cursor: default;
+`
+
+export const ImagePlanets = styled.img`
+    border-radius: 8px;
+    box-shadow: 0px 5px 0px 0px #ff3fff;
+    width: 100%;
+    min-height: 45%;
+    max-height: 45%;
+`

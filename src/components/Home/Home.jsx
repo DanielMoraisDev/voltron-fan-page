@@ -10,39 +10,54 @@ const homeDatabase = database.home
 const Home = () => {
     const loadHomeCards = () => {
         return homeDatabase.map((e, i) => {
-            if (i % 2 == 0) {
+            if (i == homeDatabase.length - 1) {
                 return (
                     <CardsHero key={i}>
+                        <SideImage style={{ backgroundImage: `url(${e.imageSide})` }}>
+                        </SideImage>
                         <SideInformation style={{ padding: "20px" }}>
                             <BoldedTitle>{e.titulo}</BoldedTitle>
                             <p>{e.texto}</p>
-                            <Link to={e.link}><AnimatedButton>{e.buttonText}</AnimatedButton></Link>
+                            <Link target="_blank" to={e.link}><AnimatedButton>{e.buttonText}</AnimatedButton></Link>
                         </SideInformation>
-                        <SideImage style={{ backgroundImage: `url(${e.imageSide})` }}>
-                        </SideImage>
                     </CardsHero>
                 )
             } else {
-                return (
-                    <CardsHero key={i}>
-                        <SideImage style={{ backgroundImage: `url(${e.imageSide})` }}>
-                        </SideImage>
-                        <SideInformation style={{ padding: "20px" }}>
-                            <BoldedTitle>{e.titulo}</BoldedTitle>
-                            <p>{e.texto}</p>
-                            <Link to={e.link}><AnimatedButton>{e.buttonText}</AnimatedButton></Link>
-                        </SideInformation>
-                    </CardsHero>
-                )
+                if (i % 2 == 0) {
+                    return (
+                        <CardsHero key={i}>
+                            <SideInformation style={{ padding: "20px" }}>
+                                <BoldedTitle>{e.titulo}</BoldedTitle>
+                                <p>{e.texto}</p>
+                                <Link to={e.link}><AnimatedButton>{e.buttonText}</AnimatedButton></Link>
+                            </SideInformation>
+                            <SideImage style={{ backgroundImage: `url(${e.imageSide})` }}>
+                            </SideImage>
+                        </CardsHero>
+                    )
+                } else {
+                    return (
+                        <CardsHero key={i}>
+                            <SideImage style={{ backgroundImage: `url(${e.imageSide})` }}>
+                            </SideImage>
+                            <SideInformation style={{ padding: "20px" }}>
+                                <BoldedTitle>{e.titulo}</BoldedTitle>
+                                <p>{e.texto}</p>
+                                <Link to={e.link}><AnimatedButton>{e.buttonText}</AnimatedButton></Link>
+                            </SideInformation>
+                        </CardsHero>
+                    )
+                }
             }
+
         })
     }
     return (
         <>
-            <Jumbotron style={{ flexDirection: "column", padding: '10%'}}>
-                <BackgroundJumbotron style={{backgroundImage: `url(${backgroundImageVoltron})`}} />
+            <Jumbotron style={{ flexDirection: "column", padding: '10%' }}>
+                <BackgroundJumbotron style={{ backgroundImage: `url(${backgroundImageVoltron})` }} />
                 <SideInformation>
-                    <BoldedTitle style={{textAlign: "center"}} >Conheça sobre o Voltron!</BoldedTitle>
+                    <BoldedTitle style={{ textAlign: "center" }} >Conheça sobre o Voltron!</BoldedTitle>
                     <p style={{ textAlign: "center" }}>Descubra o poderoso universo de Voltron e mergulhe em uma jornada épica de coragem e união!</p>
                     <AnimatedComponent><Link to={"/sobre"}><PrimaryButton>Saiba mais</PrimaryButton></Link></AnimatedComponent>
                 </SideInformation>

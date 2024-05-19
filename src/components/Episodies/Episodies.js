@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CardsEpisodies = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     border-radius: 8px;
     gap: 15px;
     max-width: 400px;
@@ -15,6 +15,8 @@ export const CardsEpisodies = styled.div`
 `
 
 export const ImageEp = styled.img`
+    border-radius: 8px;
+    box-shadow: 0px 5px 0px 0px #ff3fff;
     width: 100%;
     height: 45%;
 `
