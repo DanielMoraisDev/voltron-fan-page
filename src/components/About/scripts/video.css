@@ -1,0 +1,92 @@
+  button:focus {
+    outline: none;
+  }
+
+  .video-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .video-controls-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .play-pause-btn,
+  .full-screen-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .play-pause-btn i,
+  .full-screen-btn i {
+    font-size: 24px;
+  }
+  
+  .volume-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .volume-slider {
+    width: 100px;
+    margin: 0 10px;
+  }
+  
+  .duration-container {
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .current-time,
+  .total-time {
+    font-weight: bold;
+    margin: 0 5px;
+  }
+  
+  .volume-container .mute-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .volume-container .mute-btn i {
+    color: #fff; 
+    font-size: 18px; 
+  }
+
+  .full-screen-btn i {
+    font-size: 24px;
+  }
+
+  video::-webkit-media-controls {
+    display: none !important;
+  }
+  
+  .video-container.full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+  }

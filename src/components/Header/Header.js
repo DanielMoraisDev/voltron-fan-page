@@ -2,13 +2,16 @@ import { styled } from "styled-components";
 import { Link } from "react-router-dom"
 
 export const MainNav = styled.main`
+    position: fixed;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: auto;
     gap: 10px;
-    
+    background-color: #0000002d;
+    z-index: 99999;
 `
 export const RouterLink = styled(Link)`
     color: #ffffff;
