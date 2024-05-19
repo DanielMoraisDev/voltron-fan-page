@@ -7,5 +7,8 @@ export const MainFooter = styled.footer`
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: #0000002d;
-`
+    background-color: #020016ff;
+    border-radius: 30px 30px 0 0;
+    color: #fff;
+`;
+

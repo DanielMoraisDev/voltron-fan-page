@@ -1,0 +1,160 @@
+{
+    "home": [
+        {
+            "titulo": "Conheça sobre os personagens",
+            "texto": "Embarque em uma jornada para desvendar os segredos e as nuances de cada Paladino e vilão que molda o destino do universo Voltron. Explore suas histórias de origem, habilidades únicas e as complexidades de suas personalidades!",
+            "link": "/personagens",
+            "buttonText": "Conhecer agora",
+            "imageSide": "/src/assets/images/image.png"
+        },
+        {
+            "titulo": "Veja os episódios mais marcantes da série",
+            "texto": "Prepare-se para uma montanha-russa de emoções enquanto você mergulha nos momentos mais impactantes da série. De confrontos épicos a revelações surpreendentes, cada episódio escolhido promete uma experiência inesquecível!",
+            "link": "/episodios",
+            "buttonText": "Ver agora",
+            "imageSide": "/src/assets/images/wp2401263-keith-and-lance-wallpapers.png"
+        },
+        {
+            "titulo": "Visite os principais planetas da série",
+            "texto": "Descubra os planetas mais famosos da série Voltron e mergulhe na emoção da exploração. De Arus, com sua história rica e lendários Leões, até Balto, com seus mistérios e desafios selvagens, cada planeta é uma promessa de aventura e descoberta.",
+            "link": "/planetas",
+            "buttonText": "Descobrir agora",
+            "imageSide": "/src/assets/images/wp2644865-voltron-legendary-defender-wallpapers.jpg"
+        },
+        {
+            "titulo": "Adicione os seus wallpapers favoritos!",
+            "texto": "Mostre seu amor pela série e exiba sua paixão com os wallpapers exclusivos da nossa galeria! Personalize seu dispositivo com a energia vibrante e mostre ao mundo o quão fã você é. Faça o download dos nossos wallpapers e mergulhe ainda mais fundo no universo de Voltron!",
+            "link": "/wallpapers",
+            "buttonText": "Ver galeria agora",
+            "imageSide": "/src/assets/images/wp2644713-voltron-legendary-defender-wallpapers.jpg"
+        }
+    ],
+    "about":
+        {
+            "cardsHero": [
+                {
+                    "titulo": "A Continuação de uma Franquia Adorada",
+                    "texto": "Voltron assume o desafio de dar continuidade a uma das franquias mais queridas da cultura pop. Esta série não apenas resgata a essência da original, mas também expande o universo de maneiras surpreendentes. Com uma abordagem ousada e respeitosa, Voltron rejuvenesce a saga, mantendo-se fiel ao legado que a precede. É uma celebração do passado e do futuro, reafirmando o lugar especial que Voltron ocupa nos corações dos fãs, antigos e novos."
+                },
+                {
+                    "titulo": "Explorando detalhes",
+                    "texto": "Prepare-se para mergulhar nas profundezas do universo de Voltron com esta introdução detalhada à série. Desde os primórdios da história até os momentos épicos de batalha, esta exploração abrangente oferece uma visão holística do mundo de Voltron. Conheça os personagens, compreenda os conflitos e desvende os segredos que moldam essa narrativa intergaláctica. Seja você um fã de longa data ou um novato curioso, esta introdução é o ponto de partida perfeito para uma jornada inesquecível através das estrelas."
+                }
+            ],
+            "cards": [
+                {
+                    "titulo": "Planetas marcantes",
+                    "texto": "Conheça os destinos intergalácticos que moldam o universo de Voltron. De Arus, o lendário lar dos Leões e da Princesa Allura, a Balto, um mundo selvagem repleto de desafios, cada planeta tem sua própria história e importância na saga.",
+                    "link": "/personagens",
+                    "buttonText": "Conhecer planetas"
+                },
+                {
+                    "titulo": "Personagens principais",
+                    "texto": "Descubra os valentes guerreiros que compõem o lendário time de Voltron. Desde Shiro, o líder corajoso, até Hunk, o coração do grupo, cada personagem traz sua própria habilidade e determinação para a batalha contra as forças do mal.",
+                    "link": "/personages",
+                    "buttonText": "Ver galeria de personagens"
+                }
+            ]
+        },
+    "episodies": [
+        {
+            "titulo": "A origem de voltron",
+            "sinopse": "Surpresos, mas prontos para zarpar, cinco aspirantes a desbravadores do espaço descobrem que têm o poder de formar Voltron, o robô mais poderoso do universo.",
+            "image": "/src/assets/images/episodies/AAAABeuY1Dz9CPF3Ol5RePxwbW04BSE-dKwcDDb1589MkZnwoEeINq8lPof8Btl7UMOlTnkd-cOcwbfNaw2fay6iRsT0kfzS-T5xVUQxLdRTvzdktlxT0hHL72PA.jpg",
+            "ep": "EP: 1",
+            "temp": "TEMP: 1"
+        },
+        {
+            "titulo": "O retorno do gladiador",
+            "sinopse": "Shiro precisa tentar se lembrar de momentos dolorosos de seu passado para deter um robô gigante que ameaça a paz em Arus.",
+            "image": "/src/assets/images/episodies/AAAABe_2Eqklml2A7vkZ99MSppqTbSFJJ8mt3ptGROkH099fFN6gHGdp--oNnHVSkWCUtfOA80dMwu0dLE283t8Y7dMAzvGecgaOFFDz9RR58YQQp66sRA8C0PkJ.jpg",
+            "ep": "EP: 3",
+            "temp": "TEMP: 1"
+        },
+        {
+            "titulo": "A espada de Marmora",
+            "sinopse": "Keith e Shiro viajam para uma base escondida num esforço para se alinhar à Espada de Marmora. Keith precisa lutar para descobrir a verdade sobre seu passado.",
+            "image": "/src/assets/images/episodies/AAAABdssaBKLOne19Pe25ouFNpw1LGJ9elJpPol5Mr1bZwAlxRi47oOp9iOxl2dbyRuUCOg_ZlsMsK803nh5s1gE2f1qDnoR0FN_0f1xdXUz08LV-QXK1dXhdga7.jpg",
+            "ep": "EP: 8",
+            "temp": "TEMP: 2"
+        },
+        {
+            "titulo": "Luta por sobrevivência",
+            "sinopse": "Allura viaja a Balmera para adquirir um cristal poderoso, mas a visita de uma besta perversa faz com que ela peça ajuda aos Paladinos.",
+            "image": "/src/assets/images/episodies/AAAABc7O2v2-M2Oy_D8VOAx8aBu7W8VOSRntlQHXCUyGYlNSsZiEs1nKenm7g3-TT-9u42l1HgydiBsBTw6_COjwZnRfL15Ap6pIUL4Xt9uZW1qWx6_caIOPIGNp.jpg",
+            "ep": "EP: 11",
+            "temp": "TEMP: 2"
+        },
+        {
+            "titulo": "A jornada",
+            "sinopse": "Uma dupla de rebeldes desconfiados dificulta a vida de um Paladino em apuros. Haggar aumenta a vigilância sobre Lotor.",
+            "image": "/src/assets/images/episodies/AAAABc9ummmvC_zdnOj-zSwr656Yj0ktEUAZt3BuKsyZbCRWwM4iuFTzgx7qh1ZlnDDfPMuRJllVxt_-qMW7uC3EoxrZ2o_1aEN2Nfejgm-kTSN6vhL1reRJSAwG.jpg",
+            "ep": "EP: 5",
+            "temp": "TEMP: 3"
+        },
+        {
+            "titulo": "Reencontro",
+            "sinopse": "Pidge descobre algo que faz com que ela parta sozinha em uma missão importante nos confins do universo.",
+            "image": "/src/assets/images/episodies/AAAABULy11oTraq3l8nExA96m7Z8vFvJpddKIPrLbLjxuchCCKHqtY1IPxanrkYxVJQqW5lXSsUXP1QbEdDnt3hI9Dh5O-7WOAJpYhpSIEDvT6j4ic5gO5KbIdyT.jpg",
+            "ep": "EP: 2",
+            "temp": "TEMP: 4"
+        },
+        {
+            "titulo": "Laços de sangue",
+            "sinopse": "Keith é enviado para encontrar uma espiã chamada Krolia e localizar uma arma poderosa. Lance, Hunk e Pidge reprogramam um robô para se divertirem.",
+            "image" : "/src/assets/images/episodies/AAAABTjGhcugS4QM1rXjnAn-JwoQwKPv5BRu4sxsIp66BPIG0px46uL4GIwIZe--UKhKjpvjRJFEucJ5a2cHIZq9BkkJ3AIr00hbM4c3DbsbZnE4YwmGXFkKmxlJ.jpg",
+            "ep": "EP: 5",
+            "temp": "TEMP: 5"
+        },
+        {
+            "titulo": "A colônia",
+            "sinopse": "Após Lotor e Allura partirem na nova nave, os outros paladinos recebem um aviso que pode mudar tudo.",
+            "image" : "/src/assets/images/episodies/AAAABdaf3s3gaHviWOmcWzaJgGlgJUs3w9cUIM6U9ogdOzv28QvF4oT-9lncXao3m0-JjuMznmIzMJDZtHP38IWsl88Oy13LGsbinpD484T1FStPnRtqc0Xus89O.jpg",
+            "ep": "EP: 4",
+            "temp": "TEMP: 6"
+        },
+        {
+            "titulo": "A resistência final - Parte 2",
+            "sinopse": "No caça, Sam e os outros tentam adiar os ataques galra na esperança que um pedido de ajuda chegue a Voltron.",
+            "image" : "/src/assets/images/episodies/AAAABdaf3s3gaHviWOmcWzaJgGlgJUs3w9cUIM6U9ogdOzv28QvF4oT-9lncXao3m0-JjuMznmIzMJDZtHP38IWsl88Oy13LGsbinpD484T1FStPnRtqc0Xus89O.jpg",
+            "ep": "EP: 8",
+            "temp": "TEMP: 7"
+        }
+    ],
+    "characters": [
+        {
+            "name": "Shiro",
+            "description": "Shiro é o líder dos Paladinos de Voltron e o piloto do Leão Negro. Ele é corajoso, sábio e um mentor para os outros Paladinos. Shiro tem um passado complicado como prisioneiro dos Galra, mas seu espírito indomável o faz seguir em frente.",
+            "image": "/src/assets/images/characters/1532180326-capture5.png"
+        },
+        {
+            "name": "Keith",
+            "description": "Keith é o piloto do Leão Vermelho e um dos Paladinos mais habilidosos em combate. Ele é determinado, um pouco impulsivo, mas profundamente leal aos seus amigos. Keith descobre que tem uma ligação com os Galra, o que o leva a questionar sua identidade.",
+            "image": "/src/assets/images/characters/ea56c3c03be65bbf0dcf8e46277c8a0b.jpg"
+        },
+        {
+            "name": "Lance",
+            "description": "Lance é o piloto do Leão Azul e é conhecido por seu carisma e senso de humor. Embora às vezes inseguro, Lance é um atirador excepcional e desenvolve um forte senso de responsabilidade ao longo da série.",
+            "image": "/src/assets/images/characters/93f69a404bd7eaa083422f9a2f28868d.jpg"
+        },
+        {
+            "name": "Pidge",
+            "description": "Pidge, cujo nome verdadeiro é Katie, é a piloto do Leão Verde. Pidge é um gênio da tecnologia e hacker habilidoso. Ela entrou na busca por Voltron para encontrar seu irmão desaparecido e pai, ambos capturados pelos Galra.",
+            "image": "/src/assets/images/characters/pidge.png"
+        },
+        {
+            "name": "Hunk",
+            "description": "Hunk é o piloto do Leão Amarelo e é conhecido por sua força e habilidades de engenharia. Ele tem um coração enorme e sempre coloca seus amigos em primeiro lugar. Hunk é muitas vezes o alívio cômico, mas também mostra grande coragem.",
+            "image": "/src/assets/images/characters/9272b287f00602c2e8b118a6a2b8f764bd9f9f03_00.jpg"
+        },
+        {
+            "name": "Allura",
+            "description": "Princesa Allura é a governante de Altea e assume o comando do Castelo de Leões. Ela é uma estrategista brilhante e possui habilidades mágicas que são cruciais para a equipe. Allura é determinada a derrotar o Império Galra e restaurar a paz no universo.",
+            "image": "/src/assets/images/characters/5699889dbc90b6e85e9f71e90831dc46.png"
+        }
+    ],
+    "planets": [
+        
+    ]
+    
+}

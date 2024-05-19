@@ -91,10 +91,6 @@ function VideoPlayer() {
     return `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   };
 
-  const targetLinkYoutube = () => {
-    alert("oi")
-  }
-
   return (
     <div className="container-main mt-5" ref={videoContainerRef}>
       <div>

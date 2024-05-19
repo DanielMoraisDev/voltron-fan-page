@@ -1,59 +1,53 @@
 import { Link } from "react-router-dom"
 
-import { Jumbotron, CardsHero, SideImage, SideInformation, PrimaryButton } from "../../standard.js"
+import { Jumbotron, CardsHero, SideImage, SideInformation, PrimaryButton, AnimatedComponent, AnimatedButton, BackgroundJumbotron, BoldedTitle } from "../../standard.js"
 
 import backgroundImageVoltron from "../../assets/images/wp2644674-voltron-legendary-defender-wallpapers.jpg"
-import charactersImageVoltron from "../../assets/images/image.png"
-import episodiesImageVoltron from "../../assets/images/wp2401263-keith-and-lance-wallpapers.png"
-import planetsImageVoltron from "../../assets/images/wp2644865-voltron-legendary-defender-wallpapers.jpg"
-import wallpapersImageVoltron from "../../assets/images/wp2644713-voltron-legendary-defender-wallpapers.jpg"
+
+import database from "../../database.json"
+const homeDatabase = database.home
 
 const Home = () => {
+    const loadHomeCards = () => {
+        return homeDatabase.map((e, i) => {
+            if (i % 2 == 0) {
+                return (
+                    <CardsHero key={i}>
+                        <SideInformation style={{ padding: "20px" }}>
+                            <BoldedTitle>{e.titulo}</BoldedTitle>
+                            <p>{e.texto}</p>
+                            <Link to={e.link}><AnimatedButton>{e.buttonText}</AnimatedButton></Link>
+                        </SideInformation>
+                        <SideImage style={{ backgroundImage: `url(${e.imageSide})` }}>
+                        </SideImage>
+                    </CardsHero>
+                )
+            } else {
+                return (
+                    <CardsHero key={i}>
+                        <SideImage style={{ backgroundImage: `url(${e.imageSide})` }}>
+                        </SideImage>
+                        <SideInformation style={{ padding: "20px" }}>
+                            <BoldedTitle>{e.titulo}</BoldedTitle>
+                            <p>{e.texto}</p>
+                            <Link to={e.link}><AnimatedButton>{e.buttonText}</AnimatedButton></Link>
+                        </SideInformation>
+                    </CardsHero>
+                )
+            }
+        })
+    }
     return (
         <>
-            <Jumbotron style={{ flexDirection: "column", backgroundImage: `url(${backgroundImageVoltron})`, padding: '10%' }} >
+            <Jumbotron style={{ flexDirection: "column", padding: '10%'}}>
+                <BackgroundJumbotron style={{backgroundImage: `url(${backgroundImageVoltron})`}} />
                 <SideInformation>
-                    <h1>Conheça sobre o voltron!</h1>
+                    <BoldedTitle style={{textAlign: "center"}} >Conheça sobre o Voltron!</BoldedTitle>
                     <p style={{ textAlign: "center" }}>Descubra o poderoso universo de Voltron e mergulhe em uma jornada épica de coragem e união!</p>
-                    <Link to={"/sobre"}><PrimaryButton>Saiba mais</PrimaryButton></Link>
+                    <AnimatedComponent><Link to={"/sobre"}><PrimaryButton>Saiba mais</PrimaryButton></Link></AnimatedComponent>
                 </SideInformation>
             </Jumbotron>
-            <CardsHero>
-                <SideInformation>
-                    <h1>Conheça sobre os personagens</h1>
-                    <p>Embarque em uma jornada para desvendar os segredos e as nuances de cada Paladino e vilão que molda o destino do universo Voltron. Explore suas histórias de origem, habilidades únicas e as complexidades de suas personalidades!</p>
-                    <Link to={"/personagens"}><PrimaryButton>Conhecer agora</PrimaryButton></Link>
-                </SideInformation>
-                <SideImage style={{ backgroundImage: `url(${charactersImageVoltron})` }}>
-                </SideImage>
-            </CardsHero>
-            <CardsHero>
-                <SideImage style={{ backgroundImage: `url(${episodiesImageVoltron})` }}>
-                </SideImage>
-                <SideInformation>
-                    <h1>Veja os episódios mais marcantes da série</h1>
-                    <p>Prepare-se para uma montanha-russa de emoções enquanto você mergulha nos momentos mais impactantes da série. De confrontos épicos a revelações surpreendentes, cada episódio escolhido promete uma experiência inesquecível!</p>
-                    <Link to={"/episodios"}><PrimaryButton>Ver agora</PrimaryButton></Link>
-                </SideInformation>
-            </CardsHero>
-            <CardsHero>
-                <SideInformation>
-                    <h1>Visite os principais planetas da série</h1>
-                    <p>Descubra os planetas mais famosos da série Voltron e mergulhe na emoção da exploração. De Arus, com sua história rica e lendários Leões, até Balto, com seus mistérios e desafios selvagens, cada planeta é uma promessa de aventura e descoberta.</p>
-                    <Link to={"/planetas"}><PrimaryButton>Ver agora</PrimaryButton></Link>
-                </SideInformation>
-                <SideImage style={{ backgroundImage: `url(${planetsImageVoltron})` }}>
-                </SideImage>
-            </CardsHero>
-            <CardsHero>
-                <SideImage style={{ backgroundImage: `url(${wallpapersImageVoltron})` }}>
-                </SideImage>
-                <SideInformation>
-                    <h1>Adicione os seus wallpapers favoritos!</h1>
-                    <p>Mostre seu amor pela série e exiba sua paixão com os wallpapers exclusivos da nossa galeria! Personalize seu dispositivo com a energia vibrante e mostre ao mundo o quão fã você é. Faça o download dos nossos wallpapers e mergulhe ainda mais fundo no universo de Voltron!</p>
-                    <Link to={"/planetas"}><PrimaryButton>Ver agora</PrimaryButton></Link>
-                </SideInformation>
-            </CardsHero>
+            {loadHomeCards()}
 
         </>
     )

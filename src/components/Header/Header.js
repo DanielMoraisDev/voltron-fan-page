@@ -1,29 +1,26 @@
 import { styled } from "styled-components";
-import { Link } from "react-router-dom"
 
-export const MainNav = styled.main`
+export const MainNav = styled.nav`
     position: fixed;
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 5px;
     align-items: center;
     height: auto;
     gap: 10px;
-    background-color: #0000002d;
     z-index: 99999;
-`
-export const RouterLink = styled(Link)`
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none;
-    &:hover {
-        color: #ff3fff;
-    }
+    background-color: #00043f59;
+    box-shadow: 0 0 1.5em #00043f59;
 `
 
 export const LogoNav = styled.img`
     cursor: pointer;
     height: 54px;
     width: 130px;
+    transition: 0.6s;
+    &:hover {
+        transform: scale(1.05);
+    }
 `
