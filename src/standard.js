@@ -82,7 +82,7 @@ export const SideImage = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 10px 0px 0px #ff3fff;
+    box-shadow: 0px 5px 0px 0px #ff3fff;
 `
 
 export const RouterLink = styled(Link)`

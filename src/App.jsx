@@ -8,19 +8,49 @@ import About from "./components/About/About.jsx"
 import Characters from "./components/Characters/Characters.jsx"
 import Episodies from "./components/Episodies/Episodies.jsx"
 import Planets from "./components/Planets/Planets.jsx"
+import ErrorPage from "./components/ErrorPage/ErrorPage.jsx"
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Header/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/sobre" element={<About/>}/>
-        <Route path="/personagens" element={<Characters/>}/>
-        <Route path="/episodios" element={<Episodies/>}/>
-        <Route path="/planetas" element={<Planets/>}/>
+        <Route path="/" element={
+          <>
+            <Header />
+            <Home />
+            <Footer />
+          </>
+        } />
+        <Route path="/sobre" element={
+          <>
+            <Header />
+            <About />
+            <Footer />
+          </>
+        } />
+        <Route path="/personagens" element={
+          <>
+            <Header />
+            <Characters />
+            <Footer />
+          </>
+        } />
+        <Route path="/episodios" element={
+          <>
+            <Header />
+            <Episodies />
+            <Footer />
+          </>
+        } />
+        <Route path="/planetas" element={
+          <>
+            <Header />
+            <Planets />
+            <Footer />
+          </>
+        } />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
-      <Footer/>
     </BrowserRouter>
   )
 }

@@ -44,13 +44,13 @@
             {
                 "titulo": "Planetas marcantes",
                 "texto": "Conheça os destinos intergalácticos que moldam o universo de Voltron. De Arus, o lendário lar dos Leões e da Princesa Allura, a Balto, um mundo selvagem repleto de desafios, cada planeta tem sua própria história e importância na saga.",
-                "link": "/personagens",
+                "link": "/planetas",
                 "buttonText": "Conhecer planetas"
             },
             {
                 "titulo": "Personagens principais",
                 "texto": "Descubra os valentes guerreiros que compõem o lendário time de Voltron. Desde Shiro, o líder corajoso, até Hunk, o coração do grupo, cada personagem traz sua própria habilidade e determinação para a batalha contra as forças do mal.",
-                "link": "/personages",
+                "link": "/personagens",
                 "buttonText": "Ver galeria de personagens"
             }
         ]
@@ -115,7 +115,7 @@
         {
             "titulo": "A resistência final - Parte 2",
             "sinopse": "No caça, Sam e os outros tentam adiar os ataques galra na esperança que um pedido de ajuda chegue a Voltron.",
-            "image": "/src/assets/images/episodies/AAAABdaf3s3gaHviWOmcWzaJgGlgJUs3w9cUIM6U9ogdOzv28QvF4oT-9lncXao3m0-JjuMznmIzMJDZtHP38IWsl88Oy13LGsbinpD484T1FStPnRtqc0Xus89O.jpg",
+            "image": "/src/assets/images/episodies/AAAABUXVTV6SagH7Mu81NMTOUh-yByYnZP-TuAr3O3WDJUOWj3TklEsMfX2nJnKD6fkOzFaShbwiI2vv7qF3aJVkgQxGdKIacILzw3zdoAgSVZZkW1qtZlCuhuxi.jpg",
             "ep": "EP: 8",
             "temp": "TEMP: 7"
         }
