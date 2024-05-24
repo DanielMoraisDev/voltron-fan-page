@@ -1,8 +1,13 @@
-import { Jumbotron, BackgroundJumbotron, SideInformation, BoldedTitle, CardsContainer } from "../../standard"
+import { Container } from "./ErrorPage"
 
 const ErrorPage = () => {
     return (
-        <h1>test</h1>
+        <>
+            <Container>
+                <h1 style={{fontWeight: "bold", fontSize: "200px"}}>404</h1>
+                <h2 style={{fontWeight: "600"}}>Not Found</h2>
+            </Container>
+        </>
     )
 }
 
