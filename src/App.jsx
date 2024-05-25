@@ -8,13 +8,17 @@ import About from "./components/About/About.jsx"
 import Characters from "./components/Characters/Characters.jsx"
 import Episodies from "./components/Episodies/Episodies.jsx"
 import Planets from "./components/Planets/Planets.jsx"
+
 import ErrorPage from "./components/ErrorPage/ErrorPage.jsx"
+
+import Login from "./components/Login/Login.jsx"
+import Register from "./components/Register/Register.jsx"
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={
+        <Route path="/inicio" element={
           <>
             <Header />
             <Home />
@@ -49,6 +53,8 @@ const App = () => {
             <Footer />
           </>
         } />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Register />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>

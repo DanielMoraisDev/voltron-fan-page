@@ -9,7 +9,7 @@ const Header = () => {
         <MainNav>
             <RouterLink to="/sobre">Sobre</RouterLink>            
             <RouterLink to="/episodios">Episódios</RouterLink>
-            <RouterLink to="/" ><LogoNav src={imgLogoNav} /></RouterLink>
+            <RouterLink to="/inicio" ><LogoNav src={imgLogoNav} /></RouterLink>
             <RouterLink to="/personagens">Personagens</RouterLink>
             <RouterLink to="/planetas">Planetas</RouterLink>
         </MainNav>

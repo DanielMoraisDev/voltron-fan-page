@@ -7,4 +7,5 @@ export const Container = styled.div`
     height: 100vh;
     align-items: center;
     margin-top: 5%;
+    filter: drop-shadow(0 0 2.5em #646cff5e);
 `
