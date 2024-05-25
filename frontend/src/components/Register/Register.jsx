@@ -1,7 +1,9 @@
-import { Container, Form } from "../../standard"
+import { ErrorMessage, Container, FieldsForm, SideForm, InputForm, SideImage, PrimaryButton, FormContainer, LabelForm } from "../../standard"
 
 import axios from "axios"
 import React from "react"
+
+import formImage from "../../assets/images/wp5634314-voltron-legendary-defender-phone-wallpapers.jpg"
 
 const Register = () => {
     const [name, setName] = React.useState("")
@@ -43,7 +45,9 @@ const Register = () => {
                 setIsNameValidated(true)
             }
         } else if (actualField == "email") {
-            if (value == "") {
+            const emailRegex = /^[\w.%+-]{1,64}@[\w.-]{2,}\.[a-zA-Z]{2,}$/;
+
+            if (value == "" || !emailRegex.test(value)) {
                 setErrorEmail("Preencha o email corretamente")
                 setIsEmailValidated(false)
             } else {
@@ -59,7 +63,9 @@ const Register = () => {
                 }
             }
         } else if (actualField == "password") {
-            if (value == "") {
+            const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{2,50}$/;
+            
+            if (value == "" || passwordRegex.test(value)) {
                 setErrorPassword("Preencha a senha corretamente")
                 setIsPasswordValidated(false)
             } else {
@@ -71,9 +77,7 @@ const Register = () => {
     }
 
     const validatedFields = () => {
-        if (!isNameValidated || !isPasswordValidated || !isEmailValidated) {
-            // alterar cor botão
-        } else {
+        if (isNameValidated && isPasswordValidated && isEmailValidated) {
             event.preventDefault();
             axios.post("http://localhost:3333/users", formData)
                 .then(res => {
@@ -88,25 +92,31 @@ const Register = () => {
 
     return (
         <Container>
-            <Form onSubmit={(Event) => {
-                Event.preventDefault()
-                validatedFields()
-            }} action="">
+            <FormContainer>
+                <SideImage style={{ height: "100%", margin: "0", boxShadow: "none", backgroundImage: `url(${formImage})` }}></SideImage>
+                <SideForm>
+                    <h1 style={{ fontWeight: "bolder" }}>Fazer Registro</h1>
+                    <FieldsForm onSubmit={(Event) => {
+                        Event.preventDefault()
+                        validatedFields()
+                    }} action="">
 
-                <label htmlFor="name">Nome:</label>
-                <input type="text" id="name" placeholder="Digite seu nome" onBlur={({ target }) => validationField(target.value)} value={name} onChange={({ target }) => setName(target.value)} />
-                {errorName && <span>{errorName}</span>}
+                        <LabelForm htmlFor="name">Nome:</LabelForm>
+                        <InputForm type="text" id="name" placeholder="Digite seu nome" onBlur={({ target }) => validationField(target.value)} value={name} onChange={({ target }) => setName(target.value)} />
+                        {errorName && <ErrorMessage>{errorName}</ErrorMessage>}
 
-                <label htmlFor="email">Email:</label>
-                <input type="text" id="email" placeholder="Digite seu email" onBlur={({ target }) => validationField(target.value)} value={email} onChange={({ target }) => setEmail(target.value)} />
-                {errorEmail && <span>{errorEmail}</span>}
+                        <LabelForm htmlFor="email">Email:</LabelForm>
+                        <InputForm type="text" id="email" placeholder="Digite seu email" onBlur={({ target }) => validationField(target.value)} value={email} onChange={({ target }) => setEmail(target.value)} />
+                        {errorEmail && <ErrorMessage>{errorEmail}</ErrorMessage>}
 
-                <label htmlFor="password">Senha:</label>
-                <input type="text" id="password" placeholder="Digite sua senha" onBlur={({ target }) => validationField(target.value)} value={password} onChange={({ target }) => setPassword(target.value)} />
-                {errorPassword && <span>{errorPassword}</span>}
+                        <LabelForm htmlFor="password">Senha:</LabelForm>
+                        <InputForm type="text" id="password" placeholder="Digite sua senha" onBlur={({ target }) => validationField(target.value)} value={password} onChange={({ target }) => setPassword(target.value)} />
+                        {errorPassword && <ErrorMessage>{errorPassword}</ErrorMessage>}
 
-                <button>Enviar</button>
-            </Form>
+                        <PrimaryButton>Enviar</PrimaryButton>
+                    </FieldsForm>
+                </SideForm>
+            </FormContainer>
         </Container>
     )
 }

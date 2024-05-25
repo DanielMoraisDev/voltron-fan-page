@@ -1,8 +1,9 @@
-import { Container, Form } from "../../standard"
+import { ErrorMessage, Container, FieldsForm, SideForm, InputForm, SideImage, PrimaryButton, FormContainer, LabelForm } from "../../standard"
 
 import axios from "axios"
 import React from "react"
 
+import formImage from "../../assets/images/image.png"
 
 const Login = () => {
     const [email, setEmail] = React.useState("")
@@ -29,7 +30,9 @@ const Login = () => {
         const data = await fetchData()
 
         if (actualField == "email") {
-            if (value == "") {
+            const emailRegex = /^[\w.%+-]{1,64}@[\w.-]{2,}\.[a-zA-Z]{2,}$/;
+
+            if (value == "" || !emailRegex.test(value)) {
                 setErrorEmail("Preencha o email corretamente")
                 setIsEmailValidated(false)
             } else {
@@ -37,7 +40,9 @@ const Login = () => {
                 setIsEmailValidated(true)
             }
         } else if (actualField == "password") {
-            if (value == "") {
+            const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{2,50}$/;
+            
+            if (value == "" || passwordRegex.test(value)) {
                 setErrorPassword("Preencha a senha corretamente")
                 setIsPasswordValidated(false)
             } else {
@@ -69,31 +74,35 @@ const Login = () => {
     }
 
     const validatedFields = () => {
-        if (!isPasswordValidated || !isEmailValidated) {
-            // alterar cor botão
-        } else {
+        if (isPasswordValidated && isEmailValidated) {
             event.preventDefault();
             window.location.href = "/inicio";
-        }
+        } 
     }
 
     return (
         <Container>
-            <Form onSubmit={(Event) => {
-                Event.preventDefault()
-                validatedFields()
-            }} action="">
+            <FormContainer>
+                <SideImage style={{height: "100%", margin: "0", boxShadow: "none", backgroundImage: `url(${formImage})` }}></SideImage>
+                <SideForm>
+                    <h1 style={{fontWeight: "bolder"}}>Fazer login</h1>
+                    <FieldsForm onSubmit={(Event) => {
+                        Event.preventDefault()
+                        validatedFields()
+                    }} action="">
 
-                <label htmlFor="email">Email: </label>
-                <input id="email" type="text" name="email" placeholder="Digite seu email" onBlur={({ target }) => validationField(target.value)} value={email} onChange={({ target }) => setEmail(target.value)} />
-                {errorEmail && <span>{errorEmail}</span>}
+                        <LabelForm htmlFor="email">Email: </LabelForm>
+                        <InputForm id="email" type="text" name="email" placeholder="Digite seu email" onBlur={({ target }) => validationField(target.value)} value={email} onChange={({ target }) => setEmail(target.value)} />
+                        {errorEmail && <ErrorMessage>{errorEmail}</ErrorMessage>}
 
-                <label htmlFor="password">Senha: </label>
-                <input id="password" type="text" name="password" placeholder="Digite sua senha" onBlur={({ target }) => validationField(target.value)} value={password} onChange={({ target }) => setPassword(target.value)} />
-                {errorPassword && <span>{errorPassword}</span>}
+                        <LabelForm htmlFor="password">Senha: </LabelForm>
+                        <InputForm id="password" type="text" name="password" placeholder="Digite sua senha" onBlur={({ target }) => validationField(target.value)} value={password} onChange={({ target }) => setPassword(target.value)} />
+                        {errorPassword && <ErrorMessage>{errorPassword}</ErrorMessage>}
 
-                <button>Enviar</button>
-            </Form>
+                        <PrimaryButton>Enviar</PrimaryButton>
+                    </FieldsForm>
+                </SideForm>
+            </FormContainer>
         </Container>
     )
 }

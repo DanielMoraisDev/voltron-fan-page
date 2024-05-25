@@ -152,10 +152,48 @@ export const Container = styled.div`
     height: 100vh;
 `
 
-export const Form = styled.form`
+export const FormContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: calc(70% - 50px);
+    background-color: #0e079141;
+    filter: drop-shadow(0 0 2em #646cff3a);
+    height: 83%;
+`
+
+export const SideForm = styled.div`
+    width: 50%;
     display: flex;
     flex-direction: column;
+    height: 100%;
     gap: 10px;
-    padding: 15px;
-    background-color: #0e079167;
+    padding: 20px;
+`
+
+export const FieldsForm = styled.form`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+    gap: 10px;
+`
+
+export const LabelForm = styled.label`
+    font-weight: bolder;
+`
+
+export const InputForm = styled.input`
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 8px;
+    &::placeholder {
+        font-weight: 800;
+    }
+`
+
+export const ErrorMessage = styled.span`
+    color: #ff0000;
 `
