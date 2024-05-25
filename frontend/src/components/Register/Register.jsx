@@ -63,9 +63,7 @@ const Register = () => {
                 }
             }
         } else if (actualField == "password") {
-            const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{2,50}$/;
-            
-            if (value == "" || passwordRegex.test(value)) {
+            if (value == "" || value.length < 2) {
                 setErrorPassword("Preencha a senha corretamente")
                 setIsPasswordValidated(false)
             } else {

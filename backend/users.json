@@ -4,5 +4,11 @@
     "email": "test@gmail.com",
     "password": "1234",
     "id": "610ccd46-da35-46e8-be3a-10d378f347c4"
+  },
+  {
+    "name": "Daniel",
+    "email": "daniel.daniel@senai.com.br",
+    "password": "Daniel1234",
+    "id": "20d83479-fa67-47ef-ba1a-63dba8f65745"
   }
 ]

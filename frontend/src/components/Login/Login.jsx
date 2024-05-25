@@ -40,9 +40,8 @@ const Login = () => {
                 setIsEmailValidated(true)
             }
         } else if (actualField == "password") {
-            const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{2,50}$/;
             
-            if (value == "" || passwordRegex.test(value)) {
+            if (value == "" || value.length < 2) {
                 setErrorPassword("Preencha a senha corretamente")
                 setIsPasswordValidated(false)
             } else {
@@ -52,14 +51,14 @@ const Login = () => {
                     const passwordUser = dataUser.password
 
                     if (dataUser == undefined || !passwordUser || passwordUser != password) {
-                        if (errorEmail != "Preencha a senha corretamente") {
-                            setErrorEmail("Preencha a senha corretamente")
+                        if (errorEmail != "Email inválido") {
+                            setErrorEmail("Email inválido")
                         }
                         setErrorEmail("Email inválido")
                         setErrorPassword("Senha inválida")
                         setIsPasswordValidated(false)
                     } else {
-                        if (errorEmail == "Preencha a senha corretamente") {
+                        if (errorEmail == "Email inválido") {
                             setErrorEmail(null)
                         }
                         setErrorPassword(null)
