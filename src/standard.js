@@ -142,3 +142,20 @@ export const Cards = styled.div`
     background-color: #aaaaaa23;
     cursor: default;
 `
+
+export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+`
+
+export const Form = styled.form`
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background-color: #0e079167;
+`
